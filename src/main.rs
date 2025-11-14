@@ -333,4 +333,8 @@ fn main() {
     println!("Fastest: {} ({} μs)", fastest.algorithm, fastest.time_taken);
     println!("Most Efficient: {} ({} nodes explored)", most_efficient.algorithm, most_efficient.nodes_explored);
     println!("{}", "-".repeat(70));
+
+    println!("\nPress Enter to exit...");
+    let mut exit_input = String::new();
+    let _ = std::io::stdin().read_line(&mut exit_input);
 }
